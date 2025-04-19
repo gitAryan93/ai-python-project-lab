@@ -4,17 +4,17 @@ A curated collection of Python mini-projects built by Aryan Haidary.
 These projects showcase core programming concepts, algorithmic thinking, and applied AI problem-solving.
 
 ## Projects Included
-- [AI Simulator](./ai_simulator.py)
+- [AI Simulator](./ai.simulator.py)
 - [Interview Scorer](./interview_scorer.py)
 - [Job Coach](./job_coach.py)
 - [Job Predictor](./job_predictor.py)
-- Age Calculator  
-- Income Classifier  
-- AI Career Coach  
-- Contact Book  
-- Task Manager  
-- To-Do List Tracker  
-- Study Habit Evaluator
+- [Age Calculator](./age_calculator.py)  
+- [Income Classifier](./income_classifier.py)
+- [AI Career Coach](./job_coach.py)  
+- [Contact Book](./contact_book.py)
+- [Task Manager](./task_manager.py)
+- [To-Do List Tracker](./to_do_list.py)
+- [Study Habit Evaluator](./study_habit_evaluator.py)
 
 ## Purpose
 These projects reflect a structured and practical journey into Python development,  
