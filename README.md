@@ -3,6 +3,12 @@
 A curated collection of Python mini-projects built by Aryan Haidary.  
 These projects showcase core programming concepts, algorithmic thinking, and applied AI problem-solving.
 
+## Purpose
+
+These projects reflect a structured and practical journey into Python development,  
+laying the foundation for real-world applications in AI and intelligent systems.  
+Each project is designed to emphasize clarity, logic, and best practices.
+
 ## Projects Included
 
 ### AI-Powered Career Tools
@@ -24,18 +30,6 @@ These projects showcase core programming concepts, algorithmic thinking, and app
 ### Developer Portfolio Tools
 
 - [AI Career Coach](./job_coach.py)
-
-## Purpose
-
-These projects reflect a structured and practical journey into Python development,  
-laying the foundation for real-world applications in AI and intelligent systems.  
-Each project is designed to emphasize clarity, logic, and best practices.
-
-## Author
-
-Aryan Haidary – aspiring AI developer focused on building purposeful and intelligent software solutions.
-
----
 
 ## 📊 Real-World Python Dashboards
 
@@ -60,3 +54,9 @@ This section includes 3 real-world projects focused on data analysis and visuali
   - Bar chart (Revenue by Category)
   - Pie chart (Units by Region)
   - Histogram (Price Distribution)
+
+## Author
+
+Aryan Haidary – aspiring AI developer focused on building purposeful and intelligent software solutions.
+
+---
