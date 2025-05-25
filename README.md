@@ -34,3 +34,29 @@ Each project is designed to emphasize clarity, logic, and best practices.
 ## Author
 
 Aryan Haidary – aspiring AI developer focused on building purposeful and intelligent software solutions.
+
+---
+
+## 📊 Real-World Python Dashboards
+
+This section includes 3 real-world projects focused on data analysis and visualization using Python.
+
+### 1. 🌦️ Weather App
+
+- Uses `requests` to call OpenWeatherMap API
+- Parses JSON response
+- Displays city weather: temperature, humidity, and conditions
+
+### 2. 📚 Study Dashboard
+
+- Simulates daily study data
+- Uses Pandas to calculate total hours, average focus, and top subjects
+
+### 3. 🛍️ Sales Dashboard + Charts
+
+- Simulated sales data: Product, Category, Region, Units Sold
+- Uses Pandas to analyze revenue and units
+- Visualized with Matplotlib:
+  - Bar chart (Revenue by Category)
+  - Pie chart (Units by Region)
+  - Histogram (Price Distribution)
