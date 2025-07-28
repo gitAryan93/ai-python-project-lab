@@ -1,18 +1,22 @@
 import pandas as pd
 
 
-def match_keywords(csv_path, skills_required):
-    df = pd.read_csv(csv_path)
+def match_keywords(df, skills_required):
     matched_skills = []
-    match_score = []
 
-    for text in df['cleaned_text']:
-        skills = [skill for skill in skills_required if skill.lower()
-                  in text.lower()]
-        matched_skills.append(', '.join(skills))
-        match_score.append(len(skills) * 10)  # 10 points per match
+    for text in df["cleaned_text"]:
+        matched = [skill for skill in skills_required if skill.lower()
+                   in text.lower()]
+        matched_skills.append(", ".join(matched))
 
-    df['matched_skills'] = matched_skills
-    df['match_score'] = match_score
-
+    df["matched_skills"] = matched_skills
     return df
+
+
+# Optional test
+if __name__ == "__main__":
+    test_df = pd.DataFrame({
+        "cleaned_text": ["i am a python developer", "react and ml expert"]
+    })
+    skills = ["python", "ml", "react"]
+    print(match_keywords(test_df, skills))
