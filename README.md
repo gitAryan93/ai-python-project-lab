@@ -1,36 +1,69 @@
 # AI Python Project Lab
 
-A curated collection of Python mini-projects built by Aryan Haidary.  
-These projects showcase core programming concepts, algorithmic thinking, and applied AI problem-solving.
+A curated collection of Python mini-projects by **Aryan Haidary**.  
+Focus: core programming, algorithms, and applied ML that’s actually runnable.
 
-## Projects Included
+---
 
-### AI-Powered Career Tools
+## 🔥 Featured Project — Resume Screener AI (ML Capstone)
 
-- [AI Simulator](./ai.simulator.py)
-- [Interview Scorer](./interview_scorer.py)
-- [Job Coach](./job_coach.py)
-- [Job Predictor](./job_predictor.py)
+A command-line tool that:
 
-### Utility & Productivity Tools
+- Cleans and processes resume text
+- Matches resumes against required skills
+- Predicts job roles with a trained ML model
+- Exports results with confidence scores
 
-- [Age Calculator](./age_calculator.py)
-- [Income Classifier](./income_classifier.py)
-- [Contact Book](./contact_book.py)
-- [Task Manager](./task_manager.py)
-- [To-Do List Tracker](./to_do_list.py)
-- [Study Habit Evaluator](./study_habit_evaluator.py)
+### Quickstart
 
-### Developer Portfolio Tools
+````bash
+# From repo root
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 
-- [AI Career Coach](./job_coach.py)
+# Run tests
+python -m unittest -v resume_screener_ai.test_screener
 
-## Purpose
+# Run screener
+python -m resume_screener_ai.resume_cli \
+  --file resume_screener_ai/resumes.csv \
+  --skills "python, ml, react" \
+  --min-confidence 40 \
+  --output results.csv
 
-These projects reflect a structured and practical journey into Python development,  
-laying the foundation for real-world applications in AI and intelligent systems.  
-Each project is designed to emphasize clarity, logic, and best practices.
+ **Arguments:**
+- `--file` / `--input`: Path to resume CSV file (e.g., `resumes.csv`)
+- `--skills`: Comma-separated skills to match (e.g., `python,ml,react`)
+- `--output`: Optional — path to save results (`.json` or `.csv`)
+- `--min-confidence`: Minimum confidence percentage for predictions (default: `40.0`)
 
-## Author
+---
 
-Aryan Haidary – aspiring AI developer focused on building purposeful and intelligent software solutions.
+### 📌 Example Output
+```bash
+🔍 Matched Resumes:
+
+Result #1
+  Predicted Role : Web Developer  (confidence: 45.58%)
+  Skills Matched : python, ml
+  Text           : i am a software engineer with python and ml experience
+------------------------------------------------------------
+
+Saved CSV to results.csv
+
+## 🛠 Troubleshooting
+
+If you see:
+````
+
+ModuleNotFoundError: No module named 'resume_screener_ai'
+
+````
+Run the following from your repo root:
+```bash
+source venv/bin/activate
+pip install -r requirements.txt
+````
+
+This will activate your virtual environment and install all required packages.
