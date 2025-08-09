@@ -1,6 +1,6 @@
 # run_screener.py
 
-from screener_api import process_resume
+from .screener_api import process_resume
 from pprint import pprint
 
 # Example: Single CSV with multiple resumes

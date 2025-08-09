@@ -2,8 +2,8 @@
 
 import unittest
 import pandas as pd
-from screener_api import process_resume
-from resume_keyword_matcher import match_keywords
+from .screener_api import process_resume
+from .resume_keyword_matcher import match_keywords
 
 
 class TestResumeScreener(unittest.TestCase):

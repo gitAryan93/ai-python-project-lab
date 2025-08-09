@@ -1,8 +1,8 @@
 import os
 import pandas as pd
 import joblib
-from resume_cleaner import clean_resume_data
-from resume_keyword_matcher import match_keywords
+from .resume_cleaner import clean_resume_data
+from .resume_keyword_matcher import match_keywords
 
 # Load model and vectorizer
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "model.pkl")

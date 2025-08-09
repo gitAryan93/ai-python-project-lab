@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 import pickle
-from resume_cleaner import clean_resume_data
+from .resume_cleaner import clean_resume_data
 
 # Set current directory
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))

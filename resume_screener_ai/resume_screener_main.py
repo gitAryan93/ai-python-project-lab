@@ -1,8 +1,8 @@
 import os
 import pandas as pd
-from resume_cleaner import clean_resume_data
-from resume_keyword_matcher import match_keywords
-from resume_classifier_ai import train_classifier
+from .resume_cleaner import clean_resume_data
+from .resume_keyword_matcher import match_keywords
+from .resume_classifier_ai import train_classifier
 
 # Get the current directory of the script
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
